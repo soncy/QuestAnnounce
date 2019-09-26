@@ -59,12 +59,10 @@ local function SendCompletedNotification()
 end
 
 local function delayUpdateQuestLlist()
-  if (QuestAnnounce.db.profile.settings.enable) then
-    local timer = AceTimer:ScheduleTimer(function()
-      LastQuestList = GetCurrentQuestList()
-      AceTimer:CancelTimer(timer)
-    end, 1)
-  end
+  local timer = AceTimer:ScheduleTimer(function()
+    LastQuestList = GetCurrentQuestList()
+    AceTimer:CancelTimer(timer)
+  end, 1)
 end
 
 
@@ -125,7 +123,9 @@ end
 function QuestAnnounce:QUEST_ACCEPTED(...)
   local arg = {...}
   local questIndex = arg[2]
-  if self.db.profile.settings.accepted and questIndex then
+  local settings = self.db.profile.settings
+
+  if settings.enable and settings.accepted and questIndex then
     local questLogTitleText = GetQuestLogTitle(questIndex)
     QuestAnnounce:SendMsg(L["Accepted Quest: "]..questLogTitleText)
   end
