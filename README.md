@@ -1,4 +1,4 @@
-# QuestAnnounce
+# QuestAnnounce for WoW Classic
 
 在原来任务通报的基础上增加了：
 1. 完成整个任务时通报
