@@ -7,7 +7,7 @@ local options, configOptions = nil, {}
 local function getOptions() 
   if not options then
     options = {
-        type = "group",
+      type = "group",
       name ="QuestAnnounce",      
         args = {
         general = {

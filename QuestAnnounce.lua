@@ -65,7 +65,6 @@ local function delayUpdateQuestLlist()
   end, 1)
 end
 
-
 --[[ QuestAnnounce Initialize ]]--
 function QuestAnnounce:OnInitialize()
   self.db = LibStub("AceDB-3.0"):New("QuestAnnounceDB", defaults, true)
