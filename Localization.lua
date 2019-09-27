@@ -39,6 +39,7 @@ L["Whisper Who"] = true
 L["Quest Completed: "] = true
 L["Accepted Quest: "] = true
 L["Announce when quest be accepted"] = true
+L["Enable/Disable Announce when quest be accepted"] = true
 
 if GetLocale() == "enUS" or GetLocale() == "enGB" then return end
 end
@@ -233,6 +234,7 @@ L["Whisper Who"] = "密语给谁"
 L["Quest Completed: "] = "任务完成: "
 L["Accepted Quest: "] = "接受任务: "
 L["Announce when quest be accepted"] = "接受新任务时通报"
+L["Enable/Disable Announce when quest be accepted"] = "是否开启接受新任务时通报"
 
 return
 end

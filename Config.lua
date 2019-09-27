@@ -52,20 +52,26 @@ local function getOptions()
                   order = 4,
                   type = "toggle",
                   name = L["Announce Every"]
-                },
+								},
+								accepteddesc = {
+									order = 5,
+									type = "description",
+									fontSize = "medium",
+									name = L["Enable/Disable Announce when quest be accepted"]
+								},
                 accepted = {
-                  order = 5,
+                  order = 6,
                   type = "toggle",
                   name = L["Announce when quest be accepted"]
                 }, 
                 sounddesc = {
-                  order = 6,
+                  order = 7,
                   type = "description",
                   fontSize = "medium",
                   name = L["Enable/Disable QuestAnnounce Sounds"]
                 },
                 sound = {
-                  order = 7,
+                  order = 8,
                   type = "toggle",
                   name = L["Sound"]
                 },
