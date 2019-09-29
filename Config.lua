@@ -41,7 +41,7 @@ local function getOptions()
                   order = 2,
                   type = "toggle",
                   name = L["Enable"]
-                 },
+                },
                 everydesc = {
                   order = 3,
                   type = "description",
